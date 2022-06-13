@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game</title>
+    <link rel="icon" href="images/game-controller.svg">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="header">
+        <div class="header__wrapper">
+            <div class="logo">
+                <img src="images/icon.svg" alt="gamecube" class="logo_image">
+            </div>
+            <nav class="menu">
+                <ul class="menu__list">
+                    <li class="menu_list-item"><a href="#login__id" class="menu__list-link">LOGIN</a></li>
+                    <li class="menu_list-item"><a href="#profile__id" class="menu__list-link">PROFILE</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <section class="about__raccoon">
+        <div class="wrapper">
+            <div class="about__top">
+                <img  class="about__image-top"  src="images/rules.jpg" alt="image_1" >
+                <p class="about__text-top">
+                  A classic two-person game. Players start each round by saying,
+                  “rock, paper, scissors, shoot!” On “shoot,” each player holds
+                  out their fist for rock, flat hand for paper, or their index 
+                  and middle finger for scissors. Rock crushes scissors, scissors cut paper,
+                  and paper covers rock. See who wins each round!
+                </p>
+            </div>
+            <div class="about__bottom">
+                <p class="about__text-bottom">
+                    Your goal is to win your oponent and make the biggest difference in the score!
+                    Good luck!
+                </p>
+                <img class="about__image-bottom"  src="images/rules-2.jpg" alt="image_2" >
+            </div>
+        </div>
+    </section>   
+    <section class="game">
+        <div class="score">
+          <div class="player-score">
+              <img src="images/man.svg" alt="" class="player-icon" >
+            <p>0</p>
+          </div>
+          <div class="computer-score">
+            <img src="images/man-2.svg" alt="" class="player-icon" >
+            <p>0</p>
+          </div>
+        </div>
+  
+        <div class="intro">
+          <button>Play</button>
+        </div>
+  
+        <div class="match fadeOut">
+          <h2 class="winner">Choose an option</h2>
+          <div class="hands">
+            <img class="player-hand" src="images/rock.png" alt="" />
+            <img class="computer-hand" src="images/rock.png" alt="" />
+          </div>
+          <div class="options">
+            <button class="rock">rock</button>
+            <button class="paper">paper</button>
+            <button class="scissors">scissors</button>
+          </div>
+        </div>
+      </section>
+      <section class="login" id="login__id">
+        <div class="login__wrapper" id="log_wrap">
+          <div class="sign__in">
+            <form>
+              <!-- Email input -->
+              <div class="form-outline mb-4">
+                <input type="email" id="form1Example1" class="form-control" />
+                <label class="form-label" for="form1Example1">Email address</label>
+              </div>
+            
+              <!-- Password input -->
+              <div class="form-outline mb-4">
+                <input type="password" id="form1Example2" class="form-control" />
+                <label class="form-label" for="form1Example2">Password</label>
+              </div>
+            
+              <!-- 2 column grid layout for inline styling -->
+              <div class="row mb-4">
+                <div class="col d-flex justify-content-center">
+                  <!-- Checkbox -->
+                  <div class="form-check">
+                    <input
+                      class="form-check-input"
+                      type="checkbox"
+                      value=""
+                      id="form1Example3"
+                      checked
+                    />
+                    <label class="form-check-label" for="form1Example3"> Remember me </label>
+                  </div>
+                </div>
+            
+                <div class="col">
+                  <!-- Simple link -->
+                  <a href="#!"></a>
+                </div>
+              </div>
+            
+              <!-- Submit button -->
+              <button type="submit" class="btn btn-primary btn-block">Sign in</button>
+            </form>
+          </div>
+          <div class="register" id= "register">
+            <form>
+              <!-- 2 column grid layout with text inputs for the first and last names -->
+              <div class="row mb-4">
+                <div class="col">
+                  <div class="form-outline">
+                    <input type="text" id="form3Example1" class="form-control" />
+                    <label class="form-label" for="form3Example1">First name</label>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="form-outline">
+                    <input type="text" id="form3Example2" class="form-control" />
+                    <label class="form-label" for="form3Example2">Last name</label>
+                  </div>
+                </div>
+              </div>
+            
+              <!-- Email input -->
+              <div class="form-outline mb-4">
+                <input type="email" id="form3Example3" class="form-control" />
+                <label class="form-label" for="form3Example3">Email address</label>
+              </div>
+            
+              <!-- Password input -->
+              <div class="form-outline mb-4">
+                <input type="password" id="form3Example4" class="form-control" />
+                <label class="form-label" for="form3Example4">Password</label>
+              </div>
+            
+              <!-- Checkbox -->
+              <div class="form-check d-flex justify-content-center mb-4">
+                <div class="form-check form-check-inline">
+                  <input
+                    class="form-check-input"
+                    type="radio"
+                    name="inlineRadioOptions"
+                    id="inlineRadio1"
+                    value="option1"
+                  />
+                  <label class="form-check-label" for="inlineRadio1">Men</label>
+                </div>
+                
+                <div class="form-check form-check-inline">
+                  <input
+                    class="form-check-input"
+                    type="radio"
+                    name="inlineRadioOptions"
+                    id="inlineRadio2"
+                    value="option2"
+                  />
+                  <label class="form-check-label" for="inlineRadio2">Women</label>
+                </div>
+              </div>
+            
+              <!-- Submit button -->
+              <button type="submit" class="btn btn-primary btn-block mb-4">Sign up</button>
+            
+              
+            </form>
+          </div>
+        </div>
+      </section>
+      <section class="profile" id="profile__id" >
+        <div class="container mt-5 d-flex justify-content-center">
+          <div class="card p-3">
+              <div class="d-flex align-items-center">
+                  <div class="image"> <img src="images\profile.jpg" class="rounded" width="155"> </div>
+                  <div class="ml-3 w-100">
+                      <h4 class="mb-0 mt-0">Ivan Ius</h4> <span>Student</span>
+                      <div class="p-2 mt-2 bg-primary d-flex justify-content-between rounded text-white stats">
+                          <div class="d-flex flex-column"> <span class="articles">Articles</span> <span class="number1">7</span> </div>
+                          <div class="d-flex flex-column"> <span class="followers">Followers</span> <span class="number2">550</span> </div>
+                          <div class="d-flex flex-column"> <span class="rating">Rating</span> <span class="number3">9.3</span> </div>
+                      </div>
+                      <div class="button mt-2 d-flex flex-row align-items-center"> <button class="btn btn-sm btn-outline-primary w-100">Git</button> <button class="btn btn-sm btn-primary w-100 ml-2">LinkedIn</button> </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+      </section>
+    <script src="script.js"></script>
+</body>
+</html>
